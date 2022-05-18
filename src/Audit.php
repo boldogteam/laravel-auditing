@@ -44,7 +44,7 @@ trait Audit
      */
     public function user()
     {
-        return $this->morphTo();
+        return $this->morphTo(null, null, null, 'id');
     }
 
     /**
